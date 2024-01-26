@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal British Army - Apply</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tabs-container">
+    <a href="index.html" class="tab" id="home-tab">Home</a>
+    <a href="credits.html" class="tab" id="credits-tab">Credits</a>
+    <a href="social.html" class="tab" id="social-tab">Social</a>
+    <a href="apply.html" class="tab" id="apply-tab">Apply</a>
+  </div>
+
+  <div id="apply" class="content active">
+    <h3>Apply for a Position</h3>
+
+    <form id="application-form">
+      <label for="position">Select Position:</label>
+      <select id="position" name="position">
+        <option value="builder">Builder</option>
+        <option value="modeler">Modeler</option>
+        <option value="Programmer">Programmer</option>
+        <!-- Add other positions as needed -->
+      </select>
+
+      <label for="username">Discord Username:</label>
+      <input type="text" id="username" name="username" required placeholder="Enter your Discord username">
+
+      <label for="experience">How much experience do you have?</label>
+      <textarea id="experience" name="experience" rows="4" required placeholder="Enter your experience..."></textarea>
+
+      <label for="whyExperience">Why do you want this experience?</label>
+      <textarea id="whyExperience" name="whyExperience" rows="4" required placeholder="Tell us why you want this experience..."></textarea>
+
+      <!-- Add more questions as needed -->
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
